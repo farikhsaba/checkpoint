@@ -567,7 +567,7 @@ var visualization;
 
 function drawVisualization() {
   var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1cnScCzPfHfMfNTY403kDZ_R0C0vv2E4GYGARNVEvbq0&output=html&gid=1941882098&range=A2:C&&usp=sharing');
-    query.setQuery('SELECT A, B, C, label A "Tanggal Piket", B "Catatan", C "Waktu Evaluasi"');
+    query.setQuery('SELECT A, B, C label A "Tanggal Piket", B "Catatan", C "Waktu Evaluasi"');
     query.send(handleQueryResponse);
    
 }
